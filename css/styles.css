@@ -1,0 +1,47 @@
+body {
+	font: 14px 'Oswald', sans-serif;
+	margin: 0;
+	color: #162638;
+}
+
+#wrapper {
+	overflow: hidden;
+	width: 100%;
+	min-width: 320px;
+	background-color: white;
+}
+
+.product-page {
+	margin-left: 60px;
+}
+
+.margin-holder {
+	margin-left: 60px;
+}
+
+.wrapper-frame {
+	overflow: hidden;
+	width: 100%;
+}
+
+div {
+	display: block;
+}
+.breadcrumbs ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	overflow: hidden;
+	color: #445566;
+	text-decoration: none;
+}
+
+.breadcrumbs a {
+	text-decoration: none;
+	color: black;
+}
+
+.breadcrumbs li {
+	float: left;
+	margin: 0 0 0 50px
+	}
