@@ -1,7 +1,12 @@
 body {
-	font: 14px 'Oswald', sans-serif;
+	font: 16px 'Oswald', sans-serif;
 	margin: 0;
 	color: #162638;
+	font-weight: 200;
+}
+
+ul {
+	display: block;
 }
 
 #wrapper {
@@ -45,3 +50,57 @@ div {
 	float: left;
 	margin: 0 0 0 50px
 	}
+
+header {
+	display: table;
+	width: 100%
+}
+
+.header-holder {
+	display: table;
+	background-color: #162638;
+	width: 100%;
+	min-height: 60px;
+}
+
+
+.phones {
+	padding: 16px 0 21px;
+	color: white;
+	margin: 0;
+	text-align: center;
+	font: 20px 'Oswald', sans-serif;
+	list-style: none;
+	overflow: hidden;
+	width: 100%;
+	}
+
+.phones li {
+	display: inline-block;
+	margin-right: 20px
+}
+
+span {
+	color: #e94949;
+}
+
+.send-box {
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	text-transform: uppercase;
+	}
+
+.se-re {
+	width: 200px;
+	height: 37px;
+	padding: 18px 0 10px; 
+	color: white;
+	text-decoration: none; 
+	text-align: center;
+	border: 1px solid #e94949;
+	display: block;
+	background-color: #e94949;
+}	
+
+
