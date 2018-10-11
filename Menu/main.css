@@ -1,0 +1,91 @@
+body {
+	background: url(http://pattern4site.ru/images/squares/_thumb/8-fon-dlya-sayta.png);
+	font: 1em 'Kodchasan', Arial, sans-serif;
+	text-transform: uppercase;
+}
+
+.nav {
+	float: left;
+	width: 45px;
+	list-style: none;
+	margin: 30px;
+	padding: 0;
+	opacity: 0.5;
+
+	-webkit-transition: opacity .2s ease-in-out;
+}
+
+.nav:hover {
+	opacity: 1;
+}
+
+.nav li a {
+	color: #ecbf42;
+	text-decoration: none;
+	display: block;
+	width: 170px;
+	height: 20px;
+	background-color: #242424;
+	margin: 1px;
+	padding: 10px;
+	cursor: pointer;
+
+	-webkit-transition: background-color .2s ease-in-out, color .2s ease-in-out;
+	transition: background-color .2s ease-in-out, color .2s ease-in-out;
+}
+
+.nav li a:hover {
+	background-color: #ecbf42;
+	color: #eee;
+	text-shadow: 1px 1px 0 #000;
+}
+
+.nav li a:first-child {
+	font-size: 1.2em;
+	position: relative;
+	text-indent: 35px;
+
+}
+
+.nav li {
+	width: 45px;
+	height: 42px;
+	overflow: hidden;
+	-webkit-transition: all .2s ease-in-out;
+	transition: all .2s ease-in-out;
+
+}
+
+.nav li:hover {
+	width: 170px;
+	height: 165px;
+}
+
+.nav li a:first-child::before {
+	content: '';
+	display: block;
+	position: absolute;
+	width: 35px;
+	height: 35px;
+	top: 2px;
+	left: 3px;
+}
+
+
+.main-menu a:first-child::before {
+	background: url(images/home.png) center no-repeat;
+
+}
+.settings a:first-child::before {
+	background: url(images/settings.png) center no-repeat;
+
+}
+.link a:first-child::before {
+	background: url(images/link.png) center no-repeat;
+
+}
+.search a:first-child::before {
+	background: url(images/search.png) center no-repeat;
+
+}
+
