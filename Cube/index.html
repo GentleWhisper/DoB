@@ -5,6 +5,7 @@
 	<title>CSS cube</title>
 	<link rel="stylesheet" href="main.css" class="css">
 	<link href="https://fonts.googleapis.com/css?family=K2D" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body>
 	<div id="wrapper">
@@ -17,6 +18,17 @@
 			<div class="side" id="side6">6</div>	
 		</div>
 	</div>
+
+	<script type="text/javascript">
+		$(function(){
+			$(document).mousemove(function(e) {
+				$('#cube').css({
+					'-webkit-transform':'rotateX('+e.pageY+'deg) rotateY('+e.pageX+'deg)'
+
+				})
+			})
+		});
+	</script>
 	
 </body>
 </html>
