@@ -48,6 +48,9 @@ h2 {
 	margin-top: 30px;
 	height: 25px;
 	width: 220px;
+	color: #888;
+	font-size: .8em;
+	
 }
 
 .slider {
@@ -156,3 +159,43 @@ h2 {
 .offset11 { margin-left: 860px; }
 .offset12 { margin-left: 940px; }
 
+
+@media screen and (max-width: 930px) {
+	.container {
+		width: 300px;
+	}
+ 	.span1, 
+ 	.span2, 
+ 	.span3, 
+ 	.span4, 
+ 	.span5, 
+ 	.span6, 
+ 	.span7, 
+ 	.span8, 
+ 	.span9, 
+ 	.span10,
+ 	.span11,
+ 	.span12
+ 	 { width: 300px; }
+
+ 	.thumb, .sidebar {
+ 		display: none;
+ 	}	
+	
+	.search input {
+		width: 300px;
+		margin: 0;
+	}
+
+	h1 {
+		position: relative;
+	}
+
+	.header h1:after {
+		content: ' mobile';
+		font-weight: 400;
+		position: absolute;
+		top: 30px;
+		left: 0;
+	}
+}
