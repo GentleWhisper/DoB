@@ -41,7 +41,6 @@ h1::before {
 h2 {
 	border-bottom: 1px solid #888;
 	padding-bottom: 5px;
-
 }
 
 .search input {
@@ -50,7 +49,7 @@ h2 {
 	width: 220px;
 	color: #888;
 	font-size: .8em;
-	
+
 }
 
 .slider {
