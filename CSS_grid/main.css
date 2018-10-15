@@ -1,6 +1,37 @@
+* {
+	transition: all .5s;
+	box-sizing: border-box;
+}
+
+body {
+	background: url(http://ilyakhasanov.ru/images/background/23.png);
+	color: #333;
+	font: 1em 'K2D', Arial;
+}
+
+
 .container {
 	width: 940px;
+	margin: 0 auto;
+
 }
+
+[class*="span"] {
+	margin-right: 20px;
+	float: left;
+}
+
+[class*="span"]:last-child {
+	margin-right: 0;
+	float: right;
+}
+
+.row {
+	margin-bottom: 20px;
+}
+
+
+
 
 .span1 { width: 60px; }
 .span2 { width: 140px; }
