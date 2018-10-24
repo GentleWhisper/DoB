@@ -44,6 +44,38 @@ body
 	line-height: 1.75
 	font-family: $default-font
 	overflow-x: hidden
+	opacity: 1
+	&.ishome
+		.site-header
+			min-height: 700px
+			height: 100vh
+			background-color: $preload;
+			.top-line
+				padding-top: 3px
+				width: 100%
+				position: absolute
+				z-index: 1 
+				height: 70px
+				background-color: rgba(134, 134, 134, .5)
+				color: #fff
+
+.logo
+	img
+		transform: scale(.6)
+
+.menu
+	position: absolute
+	right: 40px
+	top: 23px
+	padding-right
+
+section, header
+	position: relative
+	background-size: cover
+	background-position: center
+
+section
+	background-color: #fff;
 
 .img-responsive
 	display: block
@@ -56,5 +88,15 @@ body
 ::selection
 	background-color: $accent
 	color: #fff
+
+.hamburger
+	position: absolute
+	right: 0
+	top: 7px
+
+.hamburger-inner, .hamburger-inner::before, .hamburger-inner::after
+	background-color: #fff
+	height: 3px
+
 
 @import "media" // Всегда в конце

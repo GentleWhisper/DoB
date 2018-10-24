@@ -16,22 +16,37 @@
 	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
 	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
 	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
 	<!-- Chrome, Firefox OS and Opera -->
-	<meta name="theme-color" content="#000">
+	<meta name="theme-color" content="#B6B4AD">
 	<!-- Windows Phone -->
-	<meta name="msapplication-navbutton-color" content="#000">
+	<meta name="msapplication-navbutton-color" content="#B6B4AD">
 	<!-- iOS Safari -->
-	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+	<meta name="apple-mobile-web-app-status-bar-style" content="#B6B4AD">
+	<!-- Preloader -->
+	<style>body { opacity: 0; overflow: hidden; } html {background-color: #B6B4AD; }</style>
 
-	<link rel="stylesheet" href="css/main.min.css">
 
 </head>
 
-<body is='ishome'>
+<body class='ishome'>
 	<div id="my-page">
 		<div id="my-header">
-			<header class="site-header" style="background-image: url(img/images/bg1.png) ">
+			<header class="site-header" style="background-image: url(img/images/bg1.png)">
+				<div class="top-line">
+					<!-- PNG LOGO -->
+					<a href="#" class="logo "><img src="/img/icons/vs.png" alt="Владислав Сазонов"></a>
+					<!-- <div class="menu">
+						МЕНЮ
+						<i class="fa fa-bars"></i>
+					</div> -->
+					<a href="#my-menu" class="hamburger hamburger--emphatic">
+						<span class="hamburger-box">
+						<span class="hamburger-inner"></span>
+						</span>
+					</a>
+				</div>
 				
 			</header>
 		</div>
@@ -39,6 +54,7 @@
 		<div id="my-footer"></div>
 	</div>
 	<script src="js/scripts.min.js"></script>
+	<link rel="stylesheet" href="css/main.min.css">
 
 </body>
 </html>
