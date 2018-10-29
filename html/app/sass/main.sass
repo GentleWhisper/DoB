@@ -56,18 +56,50 @@ body
 				position: absolute
 				z-index: 1 
 				height: 70px
-				background-color: rgba(134, 134, 134, .5)
+				background-color: rgba(50, 50, 50, .5)
 				color: #fff
 
 .logo
 	img
 		transform: scale(.6)
 
-.menu
-	position: absolute
-	right: 40px
-	top: 23px
-	padding-right
+
+
+.mm-navbar
+	border-bottom-width: 0px
+	.mm-navbar__title
+		color: #fff
+
+.mm-listitem_selected
+	color: $accent
+.mm-listitem::after
+	right: 20px
+
+.mm-menu_theme-dark
+	--mm-color-background: #707070
+
+.hamburger.hamburger--emphatic.mm-listitem__text.is-active
+	display: none
+.hamburger.hamburger--emphatic.is-active
+	display: none
+
+.mm-listview
+	> li
+		> a
+			transition: color .25s ease
+			padding:
+				left: 14%
+				right: 14%
+				top: 16px
+			&:hover
+				color: $accent
+			&::before
+				content: '\f121'
+				font-family: fontawesome
+				margin-right: 8px
+		&.active
+			&>a
+				color: $accent
 
 section, header
 	position: relative
@@ -97,6 +129,10 @@ section
 .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after
 	background-color: #fff
 	height: 3px
+
+.hamburger.is-active .hamburger-inner, .hamburger.is-active .hamburger-inner::before, .hamburger.is-active .hamburger-inner::after
+	background-color: #fff
+
 
 
 @import "media" // Всегда в конце
