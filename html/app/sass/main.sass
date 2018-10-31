@@ -59,6 +59,38 @@ body
 				background-color: rgba(50, 50, 50, .5)
 				color: #fff
 
+.h1, .h2, .h3, .h4, .h5, .h6
+	line-height: 1.4
+	text-transform: uppercase
+	text-decoration: none
+
+.button
+	display: inline-block
+	border: none
+	color: #fff
+	text-decoration: none
+	background-color: $accent
+	padding: 5px 25px
+	font-size: 22px
+	text-transform: uppercase
+	font-weight: 200
+	font-family: raleway-ex
+	border-radius: 100px
+	text-align: center
+	position: relative
+	outline: none
+	transition: background-color .2s ease
+	box-shadow: 0 3px 6px rgba(0,0,0,.16) 
+	&:focus, &:hover
+		text-decoration: none
+		color: #fff
+	&:hover
+		background-color: lighten($accent, 5%)
+	&:active
+		background-color: darken($accent, 5%)
+		
+
+
 .logo
 	img
 		transform: scale(.6)
@@ -78,9 +110,9 @@ body
 .mm-menu_theme-dark
 	--mm-color-background: #707070
 
-.hamburger.hamburger--emphatic.mm-listitem__text.is-active
+.hamburger.hamburger--emphatic.mm-listitem__text
 	display: none
-.hamburger.hamburger--emphatic.is-active
+//.hamburger.hamburger--emphatic.is-active
 	display: none
 
 .mm-listview
@@ -133,6 +165,55 @@ section
 .hamburger.is-active .hamburger-inner, .hamburger.is-active .hamburger-inner::before, .hamburger.is-active .hamburger-inner::after
 	background-color: #fff
 
+.header-flex
+	display: flex
+	height: 100%
+	position: relative
+	top: 0
+
+.flex-center
+	margin: auto
+	width: 100%
+
+.header-composition
+	position: relative
+	color: $text
+	text-align: right
+	.description
+		border-bottom: 3px solid $accent
+		text-align: center
+		font-size: 20px
+		font-weight: 200
+		line-height: 30px
+	.h1
+		//text-align: right
+		font-size: 50px
+		margin: 30px 0 50px 0
+		line-height: 60px
+		text-shadow: 0 1px 1px #fff
+		font-family: 'oswald'
+	.soc
+		> ul
+			list-style: none
+			margin: 5% 11%
+			padding: 0
+			> li
+				display: inline-block
+				margin: 0
+				padding: 0 5px
+				> a
+					display: block
+					width: 40px
+					height: 40px
+					background-color: #fff
+					color: $text
+					border-radius: 10em
+					padding: 7px 0
+					text-align: center
+					box-shadow: 0 3px 6px rgba(0,0,0,.16)
+					transition: background-color .3s
+					&:hover
+						background-color: rgba(#fff, .7)
 
 
 @import "media" // Всегда в конце
